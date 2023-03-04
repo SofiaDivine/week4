@@ -36,23 +36,61 @@
       padding-top: 10px;
       font-family: "Poppins", sans-serif;
     }
+h4 {
+  font-size: 23px;
+  opacity: 0.87;
+}
+
+.wave {
+  font-size: 28px;
+}
 
     .hero {
       padding: 160px 0;
       text-align: center;
 background-color: var(--primary-color);
     }
+
+    .wave {
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;       
+  display: inline-block;
+} 
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
   </style>
 <div class="hero">
   <body>
-    <h1>Beautiful Font</h1>
+    <h4>
+      <span class="wave">👋</span>  Hello, I am
+    </h4>
+    <h1>Sofia Tanchuk</h1>
 
     <h3>
-      Hello, That's me
-      <i class="fa-solid fa-child-dress"></i>
+      Front-End Developer based in Ukraine
     </h3>
     </div>
 
-   
+Weather App
+
+   My Weather App with the Harry Potter theme! Real data for all the
+          cities in the world, and daily forecast. It can also show your current
+          location's weather by clicking the button.
+
+          Landing Page
+
+           My landing page about the labrador breed. There are a link for Wikipedia and Adoption button, where you are required to write your age, if you want to adopt a dog.
+           
   </body>
 </html>
