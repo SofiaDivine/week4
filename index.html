@@ -26,19 +26,24 @@
   </head>
   <style>
     :root {
-      --primary-color: rgb(234, 228, 228);
+      --primary-color:rgb(229, 211, 179);
+      --secondary-color: rgb(210, 180, 140) ;
     }
     h1 {
-
+opacity: 0.9;
       font-family: "Lora", serif;
     }
+    h2 {
+      opacity: 0.86;
+    }
     h3 {
+      opacity: 0.88;
       padding-top: 10px;
       font-family: "Poppins", sans-serif;
     }
 h4 {
   font-size: 23px;
-  opacity: 0.87;
+  opacity: 0.77;
 }
 
 .wave {
@@ -68,7 +73,44 @@ background-color: var(--primary-color);
    60% { transform: rotate( 0.0deg) }  
   100% { transform: rotate( 0.0deg) }
 }
+.project-description {
+  padding: 120px 60px;
+}
 
+@media (max-width:960px) {
+  .project-description, .project-description-land {
+    padding: 30px;
+    text-align: center;
+  }
+}
+.weather-img {
+  padding-top: 70px;
+}
+.weather-btn {
+
+  padding: 10px 15px;
+  border-radius: 4px ;
+  border: 3px solid ;
+  color: var(--secondary-color) ;
+  background-color: white;
+}
+.contact-me {
+  
+  margin: 30px;
+  padding: 15px 20px;
+  border-radius: 4px ;
+  border: 3px solid ;
+  color: white;
+  background-color:var(--secondary-color);
+}
+
+.landing-img {
+  padding-right: 76px;
+  max-width: 619px;
+}
+.project-description-land {
+  padding: 60px 100px;
+}
   </style>
 <div class="hero">
   <body>
@@ -80,17 +122,53 @@ background-color: var(--primary-color);
     <h3>
       Front-End Developer based in Ukraine
     </h3>
+    <button class="contact-me"> Contact Me </button>
     </div>
-
-Weather App
-
+<div class="container">
+  <div class="row mb-3">
+    <div class="col d-none d-lg-block">
+      <img class="img-fluid weather-img" src="weather.png" alt="Weather App">
+    </div>
+    <div class="col">
+      <div class="project-description">
+<h2 class="mb-5"> Weather App
+</h2>
+<p class="mb-5 text-muted">
    My Weather App with the Harry Potter theme! Real data for all the
-          cities in the world, and daily forecast. It can also show your current
+          cities in the world and daily forecast. It can also show your current
           location's weather by clicking the button.
+</p>
+<button class="weather-btn"> Try App </button>
+</div>
+    </div>
+  </div>
+</div>
+ <div class="row">
+    <div class="col">
+      <div class="project-description-land">
+<h2 class="mb-5"> Landing Page
+</h2>
+<p class="mb-5 text-muted">
+  My landing page about the labrador breed. There are a link for Wikipedia and Adoption button, where you are required to write your age, if you want to adopt a dog.
+</p>
+<button class="weather-btn"> Launch Page </button>
+</div>
+    </div>
+    <div class="col d-none d-lg-block">
+      <img class="img-fluid landing-img" src="landing.png" alt="Weather App">
+    </div>
+  </div>
+</div>
 
-          Landing Page
 
-           My landing page about the labrador breed. There are a link for Wikipedia and Adoption button, where you are required to write your age, if you want to adopt a dog.
+
+
+
+
+
+          
+
+          
            
   </body>
 </html>
