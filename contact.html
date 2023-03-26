@@ -25,11 +25,28 @@
     <title>Contacts</title>
   </head>
   <style>
+    :root {
+      --primary-color: rgb(229, 211, 179);
+      --secondary-color: rgb(210, 180, 140);
+      --dark-color: rgb(141, 112, 75);
+      --box-shadow: 0 5px 10px rgba(118, 55, 31, 0.3);
+      --primary-font: "Lora", serif;
+      --secondary-font: "Poppins", sans-serif;
+    }
     h1,
     h3,
     p,
-    h2 {
+    h2, h5 {
       text-align: center;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--primary-font);
+    }
+    p, a {
+        font-family: var(--secondary-font);
+    }
+    h2 {
+        color: var(--secondary-color);
     }
     nav li a,
     .navbar-brand {
@@ -43,6 +60,38 @@
     }
     nav li a:hover {
       text-decoration: underline;
+    }
+    
+    .two-contacts {
+padding: 30px 110px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+  margin:  70px;
+    }
+    .two-contacts a {
+        text-decoration: none;
+ margin: 20 20px;
+  color: var(--dark-color);
+  padding: 10px 14px;
+  font-size: 20px;
+  background-color: beige;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+    }
+    .two-contacts a:hover {
+         color:var(--dark-color);
+         background: none;
+ text-decoration: underline var(--dark-color);
+    }
+
+    .insta {
+        position: relative;
+        left: 187px;
+    }
+    .number {
+padding: 0px 15px;
+margin: 70px;
+margin-top: -35px ;
     }
   </style>
   <body>
@@ -67,15 +116,17 @@
                 class="nav-link active"
                 aria-current="page"
                 href="index.html"
-                alt="homepage"
+                title="Homepage"
                 >Homepage</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html" alt="projects">About Me</a>
+              <a class="nav-link" href="about.html" title="About Sofia"
+                >About Me</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html" alt="contacts"
+              <a class="nav-link" href="contact.html" title="Contacts"
                 >Contact Me</a
               >
             </li>
@@ -83,22 +134,46 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <h1>Let's get in touch!</h1>
-      <div class="row">
-        <div class="col-md">
+
+      <h1 class="mt-5 mb-5 text-muted">Let's get in touch!</h1>
+      <div class="two-contacts mt-5 ">
+    <div class=" d-flex justify-content-between">
+        <div>
           <h2>Email</h2>
+             </div>
           <p>
-            <a href="mailto:sofiatanchuk@gmail.com"> sofiatanchuk@gmail.com </a>
+            <a
+              href="mailto:sofiatanchuk@gmail.com"
+              title="sofiatanchuk@gmail.com"
+            >
+              sofiatanchuk@gmail.com
+            </a>
+         
+            </div>
+            <div class="d-flex justify-content-between">
+            <div>
           </p>
-          <h2>instagram</h2>
+          <h2>Instagram</h2>
           <p>
-            <a href="http://www.instagram.com/sofiaherselff" target="_blank">
+             </div>
+            <a
+            class="insta"
+              href="http://www.instagram.com/sofiaherselff"
+              target="_blank"
+              title="@sofiaherselff"
+            >
               @sofiaherselff</a
             >
           </p>
-        </div>
-      </div>
-    </div>
+          </div>
+          </div>
+           <div class="number d-flex justify-content-between">
+            <div>
+          <h4 class="text-muted"> Phone Number(Ukraine) </h4> </div>
+          <div>
+          <h5 class="text-muted">
+            +380(66)-073-5695
+          </h5> </div>
+          </div>
   </body>
 </html>

@@ -78,6 +78,29 @@
         width: calc(50% - 1rem);
       }
     }
+
+    @media only screen and (max-width: 768px) {
+  .my-certificates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+ .certificate-all {
+    width: 100%;
+  }
+@media (max-width: 768px) {
+  .certificate-all {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .certificate-head {
+    text-align: center;
+  }
+}
 .certificate-head {
     color: rgba(0, 0, 0, 0.8);
     margin-top: -15px;
@@ -178,17 +201,17 @@ color: white;
                 class="nav-link active"
                 aria-current="page"
                 href="index.html"
-                alt="homepage"
+                title="Homepage"
                 >Homepage</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html" alt="projects"
+              <a class="nav-link" href="about.html" title="About Sofia"
                 >About Me</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html" alt="contacts"
+              <a class="nav-link" href="contact.html" title="Contacts"
                 >Contact Me</a
               >
             </li>
@@ -211,7 +234,7 @@ Front-End Developer based in Kyiv, Ukraine
           </h2>
         </div>
         <div class="col-6">
-          <img src="iamsofia.png" alt="My Photo" class="img-fluid mypic" />
+          <img src="iamsofia.png" alt="My Photo" class="img-fluid mypic d-none d-lg-flex" />
         </div>
       </div>
     </div>
@@ -296,22 +319,22 @@ Front-End Developer based in Kyiv, Ukraine
   <p lclass="text-muted">Let's work together!</p>
 </div>
 <div>
-  <a href="" class="btn button-contact">Contact Me</a>
+  <a href="" class="btn button-contact" title="My contacts">Contact Me</a>
 </div>
   </div>
   <div class="d-flex justify-content-center mt-5 mb-5">
-    <a href="mailto:sofiatanchuk@gmail.com" class="email-link">
+    <a href="mailto:sofiatanchuk@gmail.com" class="email-link" title="sofiatanchuk@gmail.com">
 sofiatanchuk@gmail.com
     </a>
   </div>
   <div class="social-links d-flex justify-content-center mb-5">
-    <a href="http://instagram.com/sofiaherselff" target="_blank">
+    <a href="http://instagram.com/sofiaherselff" target="_blank" title="Instagram">
   <i class="fab fa-instagram"></i>
 </a>
-<a href="http://github.com/sofiadivine" target="_blank">
+<a href="http://github.com/sofiadivine" target="_blank" title="GitHub">
  <i class="fab fa-github"></i>
 </a>
-<a href="http://telegram.com/beibiksonya" target="_blank">
+<a href="http://telegram.com/beibiksonya" target="_blank" title="Telegram">
   <i class="fab fa-telegram"></i>
 </a>
   </div>
