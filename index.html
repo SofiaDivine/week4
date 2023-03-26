@@ -49,7 +49,10 @@ opacity: 0.9;
       padding-top: 10px;
       font-family: var(--secondary-font);
     }
-h4 {
+    h4 {
+      font-family: var(--primary-font);
+    }
+.hand {
   font-size: 23px;
   opacity: 0.77;
 }
@@ -182,6 +185,47 @@ nav li a {
 nav li a:hover {
   text-decoration: underline;
 }
+footer .email-link {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  opacity: 0.8;
+}
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 20px;
+  background-color: beige;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color:beige;
+  background-color: var(--secondary-color);
+}
+
+.contact-box {
+  padding: 30px 110px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+  margin:  70px;
+}
+.button-contact {
+  font-family: var(--secondary-font);
+  padding: 20px 20px;
+  color: white;
+  background-color: var(--primary-color);
+  transition: 120ms ease-in-out;
+}
+.button-contact:hover {
+background-color: var(--secondary-color);
+color: white;
+}
   </style>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -224,7 +268,7 @@ nav li a:hover {
     </nav>
 <div class="hero">
   <body>
-    <h4>
+    <h4 class="hand">
       <span class="wave">👋</span>  Hello, I am
     </h4>
     <h1>Sofia Tanchuk</h1>
@@ -279,6 +323,33 @@ nav li a:hover {
       <img class="img-fluid landing-img" src="landing.png" alt="Weather App">
     </div>
   </div>
-</div>       
+</div>    
+<footer>
+  <div class="contact-box d-flex justify-content-between mt-5 d-none d-md-flex">
+<div>
+  <h4>Work Inquiry</h4>
+  <p lclass="text-muted">Let's work together!</p>
+</div>
+<div>
+  <a href="" class="btn button-contact">Contact Me</a>
+</div>
+  </div>
+  <div class="d-flex justify-content-center mt-5 mb-5">
+    <a href="mailto:sofiatanchuk@gmail.com" class="email-link">
+sofiatanchuk@gmail.com
+    </a>
+  </div>
+  <div class="social-links d-flex justify-content-center mb-5">
+    <a href="http://instagram.com/sofiaherselff" target="_blank">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="http://github.com/sofiadivine" target="_blank">
+ <i class="fab fa-github"></i>
+</a>
+<a href="http://telegram.com/beibiksonya" target="_blank">
+  <i class="fab fa-telegram"></i>
+</a>
+  </div>
+</footer>   
   </body>
 </html>
